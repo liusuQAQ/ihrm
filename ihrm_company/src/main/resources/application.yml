@@ -7,7 +7,7 @@ server:
   port: 9001
 spring:
   application:
-    name: ihrm-company #指定服务名
+    name: ihrm-system #指定服务名
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

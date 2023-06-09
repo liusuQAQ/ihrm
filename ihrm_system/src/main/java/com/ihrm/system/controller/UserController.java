@@ -154,7 +154,10 @@ public class UserController extends BaseController {
             if("coAdmin".equals(user.getLevel())) {
                 map.put("enVisible","1");
             }
+            System.out.println("开始获取权限");
             List<Permission> list = permissionService.findAll(map);
+            System.out.println(list);
+            System.out.println("获取权限完成");
             result = new ProfileResult(user,list);
         }
 
